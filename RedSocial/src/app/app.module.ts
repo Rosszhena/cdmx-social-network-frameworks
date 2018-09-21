@@ -10,6 +10,8 @@ import { LoginPageComponent } from './componentes/login-page/login-page.componen
 import { PrivadoPageComponent } from './componentes/privado-page/privado-page.component';
 import { NotFoundPafeComponent } from './componentes/not-found-pafe/not-found-pafe.component';
 
+import { AuthService } from './servicios/auth.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { NotFoundPafeComponent } from './componentes/not-found-pafe/not-found-pa
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

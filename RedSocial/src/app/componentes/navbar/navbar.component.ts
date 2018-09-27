@@ -9,7 +9,7 @@ import { AuthService } from '../../servicios/auth.service';
 export class NavbarComponent implements OnInit {
   public isLogin: boolean;
   public nombreUsuario: string;
-  public emailUsuario:string;
+  public emailUsuario: string;
 
   constructor(
     public authService: AuthService

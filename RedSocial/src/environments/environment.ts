@@ -4,13 +4,13 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: { 
-    apiKey: 'AIzaSyBONnPcYzSFo2OejnVb0-V9yuGW0shURWg',
-    authDomain: 'redsocial-3d9dd.firebaseapp.com',
-    databaseURL: 'https://redsocial-3d9dd.firebaseio.com',
-    projectId: 'redsocial-3d9dd',
-    storageBucket: 'redsocial-3d9dd.appspot.com',
-    messagingSenderId: '870956174943'
+  firebaseConfig: {
+    apiKey: 'AIzaSyCOAVwMxdY976xSFxeak_0GbqGxXOExBlc',
+    authDomain: 'loginapp-3be87.firebaseapp.com',
+    databaseURL: 'https://loginapp-3be87.firebaseio.com',
+    projectId: 'loginapp-3be87',
+    storageBucket: 'loginapp-3be87.appspot.com',
+    messagingSenderId: '144573431885'
   }
 };
 

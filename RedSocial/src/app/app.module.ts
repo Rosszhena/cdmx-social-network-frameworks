@@ -17,11 +17,17 @@ import {FlashMessagesService} from 'angular2-flash-messages';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+
 
 import { environment } from '../environments/environment';
 
 import { AuthService } from './servicios/auth.service';
 import { AuthGuard } from './guards/auth.guard';
+import { ListaComponent } from './componentes/privado-page/lista/lista.component';
+import { ListaAddComponent } from './componentes/privado-page/lista-add/lista-add.component';
+
 
 
 @NgModule({
@@ -32,7 +38,10 @@ import { AuthGuard } from './guards/auth.guard';
     RegisterPageComponent,
     LoginPageComponent,
     PrivadoPageComponent,
-    NotFoundPafeComponent
+    NotFoundPafeComponent,
+    ListaAddComponent,
+    ListaAddComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +49,9 @@ import { AuthGuard } from './guards/auth.guard';
     FormsModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    FlashMessagesModule
+    FlashMessagesModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule
   ],
   providers: [AuthService, AuthGuard, FlashMessagesService],
   bootstrap: [AppComponent]

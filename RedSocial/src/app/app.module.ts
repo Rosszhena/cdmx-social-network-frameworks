@@ -28,7 +28,8 @@ import { AuthGuard } from './guards/auth.guard';
 import { ListaComponent } from './componentes/privado-page/lista/lista.component';
 import { ListaAddComponent } from './componentes/privado-page/lista-add/lista-add.component';
 
-
+import { ConexionService } from './servicios/conexion.service';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { ListaAddComponent } from './componentes/privado-page/lista-add/lista-ad
     NotFoundPafeComponent,
     ListaAddComponent,
     ListaAddComponent,
-    ListaComponent
+    ListaComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,9 +52,10 @@ import { ListaAddComponent } from './componentes/privado-page/lista-add/lista-ad
     AngularFireModule.initializeApp(environment.firebaseConfig),
     FlashMessagesModule,
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    AngularFontAwesomeModule
   ],
-  providers: [AuthService, AuthGuard, FlashMessagesService],
+  providers: [AuthService, AuthGuard, FlashMessagesService, ConexionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

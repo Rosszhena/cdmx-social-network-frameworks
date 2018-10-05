@@ -3,7 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
 
-export interface Item { name: string; }
+export interface Item { name: string; user: string; }
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +31,10 @@ export class ConexionService {
    }
 
    agregarItem(item: Item) {
-    this.itemsCollection.add(item);
+    this.itemDoc = this.afs.doc<Item>(`items/${item.name}`);
+    console.log(this.itemDoc);
+     console.log("servicio " + item.name + item.user);
+     this.itemsCollection.add(item);
    }
 
    eliminarItem(item) {

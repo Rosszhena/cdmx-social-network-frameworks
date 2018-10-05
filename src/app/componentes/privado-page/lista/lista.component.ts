@@ -49,5 +49,8 @@ export class ListaComponent implements OnInit {
   agregarItemEditado() {
   this.conexion.EditarItem(this.editarItem);
   }
+  like(item) {
+    console.log("like" + item.id);
+  }
 }
 

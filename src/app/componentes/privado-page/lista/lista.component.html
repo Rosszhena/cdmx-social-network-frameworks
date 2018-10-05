@@ -1,6 +1,8 @@
 <div class="card text mt-3" *ngFor="let item of items">
     <div class="card-header">
-        Featured
+
+        <img src="{{item.foto}}" class="rounded-circle img-thumbnail image">
+        <a class="">{{item.user}}</a>
     </div>
     <div class="card-body">
         <p class="card-text"> {{item.name}} </p>

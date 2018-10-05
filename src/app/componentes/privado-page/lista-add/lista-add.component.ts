@@ -15,7 +15,8 @@ export class ListaAddComponent implements OnInit {
 
   item: any = {
     name: '',
-    user: ''
+    user: '',
+    foto: ''
   };
 
   constructor(private servicio: ConexionService,  public authService: AuthService) { }
@@ -35,6 +36,7 @@ export class ListaAddComponent implements OnInit {
 
   agregar() {
     this.item.user = this.nombreUsuario;
+    this.item.foto = this.fotoUsuario;
     this.servicio.agregarItem(this.item);
     console.log(this.item );
     this.item.name = '';

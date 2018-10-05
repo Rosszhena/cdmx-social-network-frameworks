@@ -3,7 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
 
-export interface Item { name: string; user: string; }
+export interface Item { name: string; user: string; foto: string; }
 
 @Injectable({
   providedIn: 'root'

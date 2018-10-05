@@ -3,3 +3,7 @@
 .alert.flash-message {
     margin-top: 10px;
 }
+
+body {
+    font-family: 'Mali', cursive;
+}

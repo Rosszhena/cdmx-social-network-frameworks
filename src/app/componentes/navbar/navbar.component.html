@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-    <a class="navbar-brand" href="#">View <span class="text-info">School</span></a>
+    <h1 class="text-dark">KidsInGrow</h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,14 +18,15 @@
             <li class="nav-item" *ngIf="!isLogin">
                 <a class="nav-link" href="#" routerLink="/register">Registrarse</a>
             </li>
-            <li class="nav-item" *ngIf="isLogin">
-                <a class="nav-link" href="#" (click)="onClickLogout()">Salir</a>
-            </li>
+
 
             <li class="nav-item" *ngIf="isLogin">
                 <a class="nav-link">{{nombreUsuario}}</a>
                 <img src="{{fotoUsuario}}" class="rounded-circle">
                 <span class="badge pill badge-secondary">{{emailUsuario}}</span>
+            </li>
+            <li class="nav-item" *ngIf="isLogin">
+                <a class="nav-link" href="#" (click)="onClickLogout()">Salir</a>
             </li>
         </ul>
 

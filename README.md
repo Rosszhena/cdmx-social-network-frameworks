@@ -159,7 +159,7 @@ En primera estancia se les ofrece un espacio de visibilización especializado en
 ![sketch 1](https://github.com/Rosszhena/cdmx-social-network-frameworks/tree/master/src/assets/sketch1.jpeg?raw=true)
 ![sketch 2](https://github.com/Rosszhena/cdmx-social-network-frameworks/tree/master/src/assets/sketch2.jpeg?raw=true)
 ![sketch 3](https://github.com/Rosszhena/cdmx-social-network-frameworks/tree/master/src/assets/sketch3.jpeg?raw=true)
-![sketch 4](https://github.com/Rosszhena/cdmx-social-network-frameworks/tree/master/src/assets/sketch4.jpeg?raw=true)
+![sketch 4](assets/images/sketch4.jpeg?raw=true)
 
 
 
